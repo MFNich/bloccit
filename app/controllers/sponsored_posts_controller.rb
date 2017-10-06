@@ -40,7 +40,7 @@ class SponsoredPostsController < ApplicationController
     @sponsored_post.topic = @topic
 
 
-    if @sponsoredpost.save
+    if @sponsored_post.save
       flash[:notice] = "Post was updated."
       redirect_to [@sponsored_post.topic, @sponsored_post]
     else
