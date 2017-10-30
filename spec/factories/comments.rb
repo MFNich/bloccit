@@ -1,6 +1,6 @@
 FactoryGirl.define do
    factory :comment do
-     body RandomData.random_paragraph
+     body "Comment Body"
      post
      user
    end
